@@ -1,3 +1,7 @@
+# Created by Yashvi Bhatt and Sankalp Chhunchha
+# Date created: 13/07/2022
+# It was fun making this project.
+
 import tkinter as tk
 from functools import partial
 from selenium import webdriver
@@ -119,7 +123,6 @@ def call_result(label_result, n1, n2):
                         "Number of Employees": employeeNum, "Location": location}
                     data.append(item)
 
-
     else:
         # time.sleep(3)
         fileName = f"{num1}_AllLocation.xlsx"
@@ -168,7 +171,6 @@ def call_result(label_result, n1, n2):
     p.to_excel(fileName)
     label_result.config(text="file created")
     return
-
 
 root = tk.Tk()
 root.geometry('400x400')
